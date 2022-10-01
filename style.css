@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #333;
+  color: #fff;
+}
+
+h1 {
+  margin: 40px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contentWrapper {
+  padding: 40px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #545454;
+  border-radius: 10px;
+  box-shadow: 1px 4px 14px black;
+}
+
+.wrapper,
+.rangeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  padding: 0 40px;
+}
+
+.textLabel:last-child {
+  margin-top: 20px;
+}
+
+.textInput {
+  width: 250px;
+  height: max-content;
+}
+
+.rangeContainer {
+}
