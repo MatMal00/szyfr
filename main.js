@@ -21,7 +21,7 @@ const getByValue = (searchValue) => {
 const cleanText = (arr) => arr.filter((char) => numeredAlphabet.has(char));
 
 // true = code | false = uncode
-const useCode = (mode) => {
+const useCaesar = (mode) => {
   const text = cleanText(textareaInput.value.toUpperCase().split(""));
 
   const transformedText = text.map((char) => {
@@ -43,12 +43,12 @@ const useCode = (mode) => {
 
 codeBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  textareaOutput.textContent = useCode(true);
+  textareaOutput.textContent = useCaesar(true);
 });
 
 uncodeBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  textareaOutput.textContent = useCode();
+  textareaOutput.textContent = useCaesar();
 });
 
 rangeInput.addEventListener("change", (e) => (key = +e.target.value));
