@@ -77,12 +77,16 @@ textarea {
   border-radius: 10px;
   box-shadow: 4px 4px 8px rgb(42, 42, 42);
   outline: none;
+  text-transform: uppercase;
 }
 
 .textArea::placeholder {
   color: rgba(255, 255, 255, 0.793);
 }
 
+.textArea:disabled {
+  color: rgba(255, 255, 255, 0.879);
+}
 
 .rangeContainer {
   display: flex;

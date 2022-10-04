@@ -18,13 +18,21 @@
         <div class="wrapper">
           <label class="textLabel">
             <textarea
+              id="textareaInput"
               class="textArea"
               placeholder="Podaj text"
               type="text"
-            ></textarea>
+            >
+JANEK
+            </textarea>
           </label>
           <label class="textLabel">
-            <textarea class="textArea" type="text" disabled></textarea>
+            <textarea
+              id="textareaOutput"
+              class="textArea"
+              type="text"
+              disabled
+            ></textarea>
           </label>
         </div>
 
@@ -33,9 +41,10 @@
             <h2>klucz</h2>
             <label class="rangeLabel">
               <input
+                id="key"
                 type="range"
                 min="1"
-                max="34"
+                max="31"
                 value="3"
                 oninput="this.nextElementSibling.value = this.value"
               />
@@ -43,8 +52,8 @@
             </label>
           </div>
           <div class="btn-container">
-            <button class="btn">szyfruj</button>
-            <button class="btn">deszyfruj</button>
+            <button id="codeBtn" class="btn">szyfruj</button>
+            <button id="uncodeBtn" class="btn">deszyfruj</button>
           </div>
         </div>
       </form>
