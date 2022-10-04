@@ -20,7 +20,7 @@ const getByValue = (searchValue) => {
 
 const cleanText = (arr) => arr.filter((char) => numeredAlphabet.has(char));
 
-// true = code | false = endcode
+// true = code | false = uncode
 const useCode = (mode) => {
   const text = cleanText(textareaInput.value.toUpperCase().split(""));
 
