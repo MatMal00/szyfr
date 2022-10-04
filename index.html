@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Szyfr cezara</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Peralta&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <h1>szyfr cezara</h1>
+      <form class="contentWrapper">
+        <div class="wrapper">
+          <label class="textLabel">
+            <textarea
+              class="textArea"
+              placeholder="Podaj text"
+              type="text"
+            ></textarea>
+          </label>
+          <label class="textLabel">
+            <textarea class="textArea" type="text" disabled></textarea>
+          </label>
+        </div>
+
+        <div class="wrapper">
+          <div class="rangeContainer">
+            <h2>klucz</h2>
+            <label class="rangeLabel">
+              <input
+                type="range"
+                min="1"
+                max="34"
+                value="3"
+                oninput="this.nextElementSibling.value = this.value"
+              />
+              <output>3</output>
+            </label>
+          </div>
+          <div class="btn-container">
+            <button class="btn">szyfruj</button>
+            <button class="btn">deszyfruj</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
